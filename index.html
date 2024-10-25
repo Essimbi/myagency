@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>My Agency</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#introduction">À propos</a></li>
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+      <div class="button">
+        <a href="#contact" class="btn">Demande de devis</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="content">
+          <div class="text" data-aos="fade-right">
+            <h4>Bienvenu chez My Agency</h4>
+            <p class="big-text">Vous rendre beaucoup plus productif <br> est notre principal objectif</p>
+            <p class="small-text">
+                Nous sommes une agence de marketing qui aide les entreprises à atteindre leurs objectifs <br>
+                en utilisant des stratégies de marketing efficaces. <br>
+            </p>
+            <p class="small-text">
+                Nous sommes aussi spécialisés dans la formation sur des thèmes de digitalisation des entreprises
+            </p>
+            <button class="info-plus" onclick="window.location = '#contact'">Demande de devis</button>
+            <button class="nos-formations" onclick="window.location = '#formation'">Nos formations</button>
+          </div>
+          <img src="img/banner-img.png" alt="hero-img" data-aos="fade-left">
+        </div>
+    </section>
+
+    <section class="about-section" id="introduction">
+      <div class="about-container">
+        <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+          <img src="img/illustration-1.png" alt="Illustration-1">
+          <div class="shape-bg"></div>
+        </div>
+        
+        <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="section-tag">Qui sommes-nous ?</div>
+          <h2 class="section-title">Optimisez votre présence <span class="highlight">en ligne</span></h2>
+          <p class="section-text">
+            Nous sommes une équipe passionnée de digital, spécialisée dans l'accompagnement des entreprises à relever les défis du marketing en ligne. Forts de notre expertise et de notre connaissance des dernières tendances, nous vous proposons des solutions innovantes et efficaces pour développer votre marque et générer du trafic qualifié.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Clients satisfaits</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Taux de réussite</span>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="primary-btn" onclick="window.location = '#formation'">
+              Nos formations
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button class="secondary-btn" onclick="window.location = '#contact'">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" data-aos="fade-up">
+      <div class="container">
+        <div class="card-container">
+          <div class="card">
+            <h4>Marketing digital</h4>
+            <img src="img/m.png" alt="">
+          </div>
+          <div class="card card-2">
+            <h4>Stratégie de marke et identité visuelle</h4>
+            <img src="img/firm1.svg" alt="">
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <h4>Conception et développement web </h4>
+            <img src="img/d.png" alt="">
+          </div>
+          <div class="card card-2">
+            <h4>Création de contenu</h4>
+            <img src="img/c.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="services-text">
+        <h4><u>Pourquoi nous choisir ?</u></h4>
+        <span>Atteignez vos objectifs</span>
+        <p>
+          Chez <b>My Agency</b>, nous sommes passionnés par la création de campagnes marketing innovantes et efficaces qui génèrent des résultats tangibles pour nos clients. <br>
+          Notre équipe d'experts en marketing digital, en conception et en développement web travaille en étroite collaboration avec vous pour comprendre vos besoins et créer des solutions personnalisées qui répondent à vos attentes.
+        </p>
+        <button class="btn-services">Nos formations</button>
+      </div>
+    </section>
+
+    <section class="formation" id="formation" data-aos="fade-up">
+      <div class="text-formation">
+        <h4><u>Nos formations</u></h4>
+        <span>Développez vos compétences avec nos formations professionnelles !</span>
+        <p>
+          Vous souhaitez booster votre carrière ou acquérir de nouvelles compétences pour rester à la pointe de l'induistrie du digital ?
+          Nous vous proposons quatre formations complètes pour atteindre vos objectifs.
+        </p>
+      </div>
+      <div class="card-element">
+        <div class="row">
+
+          <div class="course-card" data-aos="fade-down">
+            <div class="card-image">
+              <img src="img/marketing.jpeg" alt="Marketing Digital">
+              <div class="card-overlay"></div>
+              <div class="card-badge">Formation populaire</div>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="card-title">Marketing Digital</h3>
+              </div>
+              
+              <p class="card-description">
+                🚀 Boostez votre carrière avec notre formation en marketing digital ! Apprenez les stratégies incontournables pour réussir en ligne.
+              </p>
+              
+      
+            </div>
+          </div>
+
+          <div class="course-card" data-aos="fade-down">
+            <div class="card-image">
+              <img src="img/montage.jpg" alt="Marketing Digital">
+              <div class="card-overlay"></div>
+              <div class="card-badge2">Formation moyenne</div>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="card-title">Infographie et Montage audiovisuel</h3>
+              </div>
+
+              <p class="card-description">
+                Apprenez à créer des contenus visuels et audiovisuels de haute qualité pour votre
+                entreprise ou votre projet personnel.
+              </p>
+              
+      
+            </div>
+          </div>
+
+          <div class="course-card" data-aos="fade-down">
+            <div class="card-image">
+              <img src="img/code.jpeg" alt="Marketing Digital">
+              <div class="card-overlay"></div>
+              <div class="card-badge3">Formation Difficile</div>
+            </div>
+            
+            <div class="card-content">
+              <div class="card-header">
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="card-title">Développement web</h3>
+              </div>
+              
+              <p class="card-description">
+                Apprenez les bases du développement web et créez vos propres sites web, applications
+                mobiles et plateformes en ligne.              
+              </p>
+              
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact_us_green" id="contact" data-aos="fade-left>
+      <div class="responsive-container-block big-container">
+        <div class="responsive-container-block container">
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
+            <form class="form-box">
+              <div class="container-block form-wrapper">
+                <div class="head-text-box">
+                  <p class="text-blk contactus-head">
+                    Nos contacts
+                  </p>
+                  <p class="text-blk contactus-subhead">
+                    Notre service chargé de la clientelle vous répondra dans les plus brefs delais car votre satisfaction est notre principal priorité.
+                  </p>
+                </div>
+                <div class="responsive-container-block">
+                  <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
+                    <p class="text-blk input-title">
+                      Nom
+                    </p>
+                    <input class="input" id="ijowk-6" name="FirstName">
+                  </div>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">
+                      Prénom
+                    </p>
+                    <input class="input" id="indfi-4" name="Last Name">
+                  </div>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">
+                      Email
+                    </p>
+                    <input class="input" id="ipmgh-6" name="Email">
+                  </div>
+                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                    <p class="text-blk input-title">
+                      Numéro de téléphone
+                    </p>
+                    <input class="input" id="imgis-5" name="PhoneNumber">
+                  </div>
+                  <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
+                    <p class="text-blk input-title">
+                      Faites-nous part de votre besoin
+                    </p>
+                    <textarea class="textinput" id="i5vyy-6" placeholder="Laissez votre message ici..."></textarea>
+                  </div>
+                </div>
+                <div class="btn-wrapper">
+                  <button class="submit-btn">
+                    Envoyer
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
+            <div class="container-box">
+              <div class="text-content">
+                <p class="text-blk contactus-head">
+                  Nos contacts
+                </p>
+                <p class="text-blk contactus-subhead">
+                  Notre service chargé de la clientelle vous répondra dans les plus brefs delais car votre satisfaction est notre principal priorité.
+                </p>
+              </div>
+              <div class="workik-contact-bigbox">
+                <div class="workik-contact-box">
+                  <div class="phone text-box">
+                    <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
+                    <p class="contact-text">
+                      +237 681 408 390
+                    </p>
+                  </div>
+                  <div class="address text-box">
+                    <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
+                    <p class="contact-text">
+                      service@myagency.com
+                    </p>
+                  </div>
+                  <div class="mail text-box">
+                    <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
+                    <p class="contact-text">
+                      Douala-Cameroun, Akwa rue Mermose
+                    </p>
+                  </div>
+                </div>
+                <div class="social-media-links">
+                  <a href="">
+                    <img class="social-svg" id="i706n" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+                  </a>
+                  <a href="">
+                    <img class="social-svg" id="ib9ve" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+                  </a>
+                  <a href="">
+                    <img class="social-svg" id="ie9fx" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+          <div class="footer-links">
+              <a href="#">Accueil</a>
+              <a href="#introduction">À propos</a>
+              <a href="#services">Nos Services</a>
+              <a href="#contact">Contacts</a>
+          </div>
+
+          <p>&copy; 2024 My Agency. Tous droits réservés.</p>
+      </div>
+  </footer>
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialisation des animations AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+
+    // Animation de la navbar au scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.nav-bar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script>
+      const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+      direction: 'vertical', // vertical, horizontal
+      gestureDirection: 'vertical', // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+      })
+      //get scroll value
+      lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+      })
+      function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+      }
+      requestAnimationFrame(raf)
+    </script>
+</html>
