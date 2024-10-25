@@ -311,9 +311,9 @@ span {
 }
 
 .text-formation span {
-    background: linear-gradient(to right, var(--text-color), #fff);
-    -webkit-background-clip: text;
-    color: transparent;
+    /*background: linear-gradient(to right, var(--text-color), #fff);
+    -webkit-background-clip: text;*/
+    color: rgb(251, 170, 21);
 }
 
 .cardF:hover {
