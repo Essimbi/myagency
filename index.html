@@ -14,36 +14,51 @@
       <div class="logo">
         <img src="img/logo.png" alt="Logo" />
       </div>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#introduction">À propos</a></li>
-        <li><a href="#services">Nos services</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-      <div class="button">
-        <a href="#contact" class="btn">Demande de devis</a>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    
+      <div class="nav-elements">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#introduction">À propos</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+        <div class="button">
+          <a href="#contact" class="btn">Demande de devis</a>
+        </div>
       </div>
     </nav>
 
-    <section class="hero" id="hero">
-        <div class="hero-background"></div>
-        <div class="content">
+  <section class="hero" id="hero">
+      <div class="hero-background"></div>
+      <div class="content">
           <div class="text" data-aos="fade-right">
-            <h4>Bienvenu chez My Agency</h4>
-            <p class="big-text">Vous rendre beaucoup plus productif <br> est notre principal objectif</p>
-            <p class="small-text">
-                Nous sommes une agence de marketing qui aide les entreprises à atteindre leurs objectifs <br>
-                en utilisant des stratégies de marketing efficaces. <br>
-            </p>
-            <p class="small-text">
-                Nous sommes aussi spécialisés dans la formation sur des thèmes de digitalisation des entreprises
-            </p>
-            <button class="info-plus" onclick="window.location = '#contact'">Demande de devis</button>
-            <button class="nos-formations" onclick="window.location = '#formation'">Nos formations</button>
+              <span class="badge-hero">Bienvenue chez My Agency</span>
+              <h1 class="big-text">Vous rendre beaucoup plus <span class="highlight">productif</span> est notre principal objectif</h1>
+              <div class="description">
+                  <p>Nous sommes une agence de marketing qui aide les entreprises à atteindre leurs objectifs en utilisant des stratégies de marketing efficaces.</p>
+                  <p>Nous sommes aussi spécialisés dans la formation sur des thèmes de digitalisation des entreprises.</p>
+              </div>
+              <div class="cta-buttons">
+                  <button class="btn-primary" onclick="window.location='#contact'">
+                      Demande de devis
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                  <button class="btn-secondary" onclick="window.location='#formation'">
+                      Nos formations
+                  </button>
+              </div>
           </div>
-          <img src="img/banner-img.png" alt="hero-img" data-aos="fade-left">
-        </div>
-    </section>
+          <div class="hero-image" data-aos="fade-left">
+              <img src="img/banner-img.png" alt="hero-img">
+          </div>
+      </div>
+  </section>
 
     <section class="about-section" id="introduction">
       <div class="about-container">
@@ -79,43 +94,84 @@
       </div>
     </section>
 
-    <section class="services" id="services" data-aos="fade-up">
-      <div class="container">
-        <div class="card-container">
-          <div class="card">
-            <h4>Marketing digital</h4>
-            <img src="img/m.png" alt="">
+    <section class="services" id="services">
+      <div class="services-container">
+          <div class="services-grid" data-aos="fade-up">
+              <div class="service-card">
+                  <div class="card-content">
+                      <div class="icon-wrapper">
+                          <img src="img/m.png" alt="Marketing digital">
+                      </div>
+                      <h3>Marketing digital</h3>
+                      <p class="card-description">Développez votre présence en ligne avec nos stratégies marketing innovantes.</p>
+                      <div class="card-hover">
+                          <span class="learn-more"></span>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="service-card">
+                  <div class="card-content">
+                      <div class="icon-wrapper">
+                          <img src="img/firm1.svg" alt="Stratégie marketing">
+                      </div>
+                      <h3>Stratégie de marketing et identité visuelle</h3>
+                      <p class="card-description">Créez une image de marque forte et cohérente pour votre entreprise.</p>
+                      <div class="card-hover">
+                          <span class="learn-more"></span>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="service-card">
+                  <div class="card-content">
+                      <div class="icon-wrapper">
+                          <img src="img/d.png" alt="Développement web">
+                      </div>
+                      <h3>Conception et développement web</h3>
+                      <p class="card-description">Créez une présence en ligne impactante avec nos solutions web sur mesure.</p>
+                      <div class="card-hover">
+                          <span class="learn-more"></span>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="service-card">
+                  <div class="card-content">
+                      <div class="icon-wrapper">
+                          <img src="img/c.png" alt="Création de contenu">
+                      </div>
+                      <h3>Création de contenu</h3>
+                      <p class="card-description">Engagez votre audience avec du contenu pertinent et de qualité.</p>
+                      <div class="card-hover">
+                          <span class="learn-more"></span>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="card card-2">
-            <h4>Stratégie de marketing et identité visuelle</h4>
-            <img src="img/firm1.svg" alt="">
+  
+          <div class="why-us" data-aos="fade-up" data-aos-delay="200">
+              <div class="why-us-content">
+                  <span class="badge">Pourquoi nous choisir ?</span>
+                  <h2>Atteignez vos objectifs avec My Agency</h2>
+                  <p>
+                      Chez <span class="highlight">My Agency</span>, nous sommes passionnés par la création de campagnes marketing innovantes et efficaces qui génèrent des résultats tangibles pour nos clients.
+                  </p>
+                  <p>
+                      Notre équipe d'experts en marketing digital, en conception et en développement web travaille en étroite collaboration avec vous pour comprendre vos besoins et créer des solutions personnalisées qui répondent à vos attentes.
+                  </p>
+<!--                   <button class="cta-button">
+                      Découvrir nos formations
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button> -->
+              </div>
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card">
-            <h4>Conception et développement web </h4>
-            <img src="img/d.png" alt="">
-          </div>
-          <div class="card card-2">
-            <h4>Création de contenu</h4>
-            <img src="img/c.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="services-text">
-        <h4><u>Pourquoi nous choisir ?</u></h4>
-        <span>Atteignez vos objectifs</span>
-        <p>
-          Chez <b>My Agency</b>, nous sommes passionnés par la création de campagnes marketing innovantes et efficaces qui génèrent des résultats tangibles pour nos clients. <br>
-          Notre équipe d'experts en marketing digital, en conception et en développement web travaille en étroite collaboration avec vous pour comprendre vos besoins et créer des solutions personnalisées qui répondent à vos attentes.
-        </p>
-        <button class="btn-services">Nos formations</button>
       </div>
     </section>
 
     <section class="formation" id="formation" data-aos="fade-up">
       <div class="text-formation">
-        <h4><u>Nos formations</u></h4>
+        <h4>Nos formations</h4>
         <span>Développez vos compétences avec nos formations professionnelles !</span>
         <p>
           Vous souhaitez booster votre carrière ou acquérir de nouvelles compétences pour rester à la pointe de l'induistrie du digital ?
@@ -124,7 +180,6 @@
       </div>
       <div class="card-element">
         <div class="row">
-
           <div class="course-card" data-aos="fade-down">
             <div class="card-image">
               <img src="img/marketing.jpeg" alt="Marketing Digital">
@@ -359,5 +414,21 @@
       requestAnimationFrame(raf)
       }
       requestAnimationFrame(raf)
+
+      const hamburger = document.querySelector('.hamburger');
+      const navElements = document.querySelector('.nav-elements');
+
+      hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          navElements.classList.toggle('active');
+      });
+
+      // Fermer le menu quand on clique sur un lien
+      document.querySelectorAll('.nav-elements a').forEach(link => {
+          link.addEventListener('click', () => {
+              hamburger.classList.remove('active');
+              navElements.classList.remove('active');
+          });
+      });
     </script>
 </html>
